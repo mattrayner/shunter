@@ -4,11 +4,14 @@ module.exports = function() {
 	return {
 		files: [
 			'bin/*.js',
+			'filters/**/*.js',
 			'lib/*.js',
-			'tests/server/mocks/*.js'
+			'tests/server/mocks/*.js',
+			'tests/helpers/*.js'
 		],
 		tests: [
-			'tests/server/core/*.js'
+			'tests/server/core/*.js',
+			'tests/server/filters/*.js'
 		],
 		env: {
 			type: 'node'
